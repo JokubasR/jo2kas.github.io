@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <?=(!empty($results['stage']) ? $results['stage'] : "ETAPO REZULTATAI") ?>
+            <span class="pull-right"><strong><?=translate('total.points')?></strong><span
+                    class="badge alert-success"><?= !empty($results['totalPoints']) ? $results['totalPoints'] : 0 ?></span></span>
+        </h3>
+    </div>
+    <div class="panel-body">
+        <?php if (!empty($results)) : ?>
+            <?php foreach ($results['points'] as $eventType => $eventResults) : ?>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <?= translate('points.' . $eventType) ?>
+                            <span class="pull-right"><strong><?= translate('total.points') ?></strong><span
+                                    class="badge alert-success"><?= $eventResults['totalPoints'] ?></span></span>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php foreach ($eventResults['points'] as $type => $value) : ?>
+                            <p>
+                                <strong><?= translate('points.' . $type) ?></strong>: <?= $value ?>
+                            </p>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php else : ?>
+            <div class="alert alert-danger">
+                <strong><?=translate('alert.error')?></strong> <?=translate('error.no.data.found')?>
+            </div>
+        <?php endif; ?>
+
+    </div>
+</div>

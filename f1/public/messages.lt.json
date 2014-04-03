@@ -1,0 +1,37 @@
+{
+    "layout.title": "F1 Svajonių Komanda | Skaičiuoklė",
+    "layout.header": "F1 Svajonių Komandos skaičiuoklė",
+    "layout.main.message": "Rezultatai yra imami tiesiogiai iš formula1.com tinklapio. Pateikti skaičiavimai gali nesutapti su F-1.lt rodomais rezultatais. Skaičiuojant taškus yra atsižvelgiama į teisėjų priimtus sprendimus po lenktynių. Tai yra pagrindinė priežastis, dėl ko paskaičiuoti taškai gali nesutapti.",
+
+    "points.race": "Lenktynės",
+    "points.qualifying": "Kvalifikacija",
+    "points.team": "Komanda",
+    "points.engine": "Variklis",
+    "points.pilot1": "Pilotas Nr. 1",
+    "points.pilot2": "Pilotas Nr. 2",
+    "points.stage": "Etapas",
+
+    "alert.error":  "Klaida!",
+    "error.no.data.found": "Negauti šio etapo duomenys.",
+    "error.no.best.team.found": " Nepavyko rasti geriausios šio etapo komandos.",
+
+    "total.points": "Viso taškų: ",
+
+    "title.stage": "Etapas",
+    "title.best.team": "Geriausia etapo komanda",
+
+    "label.pilot.1": "Pilotas Nr. 1",
+    "label.pilot.2": "Pilotas Nr. 2",
+    "label.team": "Komanda",
+    "label.engine": "Variklis",
+
+    "button.calculate.loading": "Skaičiuojama...",
+    "button.calculate": "Skaičiuoti",
+    "button.best.team.loading": "Ieškoma...",
+    "button.best.team": "Rasti geriausią etapo komandą",
+
+    "placeholder.team": "Pasirinkite komandą",
+    "placeholder.engine": "Pasirinkite variklį",
+    "placeholder.pilot": "Pasirinkite pilotą",
+    "placeholder.stage": "Pasirinkite etapą"
+}

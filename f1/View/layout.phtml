@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?=translate("layout.title")?></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/jumbotron-narrow.css"/>
+    <link rel="stylesheet" href="/public/js/plugins/select2/select2.css"/>
+    <link rel="stylesheet" href="/public/js/plugins/select2/select2-bootstrap.css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!--Include Google Analytics-->
+<?php if (file_exists('ga.php')) include_once('ga.php')?>
+
+<div class="container">
+    <div class="header">
+        <h2 class="text-muted"><?= translate("layout.header") ?></h2>
+    </div>
+
+    <div class="jumbotron">
+        <p class="lead"><?=translate('layout.main.message')?></p>
+    </div>
+
+    <div class="container-fluid">
+        <?= $content ?>
+    </div>
+
+    <div class="footer">
+        <p>
+            <span class="pull-left">&copy; <a href="http://lt.linkedin.com/in/jokubasramanauskas" target="_blank">Jokūbas Ramanauskas</a> <?=date('Y')?></span>
+            <span class="pull-right">Nori prisidėt? <a href="https://github.com/jo2kas/F1-Svajoniu-Komanda-skaiciuokle" target="_blank">GitHub</a></span>
+        </p>
+    </div>
+
+</div>
+<!-- /container -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/public/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/public/js/bootstrap.min.js"></script>
+<script src="/public/js/plugins/select2/select2.min.js"></script>
+
+<script src="/public/js/general.js"></script>
+
+</body>
+</html>
